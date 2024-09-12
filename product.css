@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+}
+
+.imagen {
+    display: block; 
+    width: calc(100% - 20px); 
+    height: 420px;
+    object-fit: cover; 
+    position: relative;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    margin: 10px auto; 
+    overflow: hidden; 
+}
+
+.contenedor {
+    position: absolute;
+    top: 20px;
+    left: 5%;  
+    z-index: 2; 
+}
+
+.contenedor img {
+    width: 150px;
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%; 
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    z-index: 2;
+}
+
+.sub {
+    position: absolute;
+    top: 50%; 
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    z-index: 2;
+    margin-top: 10px; 
+}
+
+.sub a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    position: absolute;
+    top: 0; 
+    right: 0;
+    z-index: 2; /
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    background: #eceae733;
+    border-radius: 25px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.contenedor-producto {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.imagen-producto {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.informacion-producto {
+    max-width: 500px;
+}
+
+.informacion-producto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.seccion-precio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.descripcion {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.seccion-carrito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cantidad {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.agregar-carrito {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #007bff;
+}
+
+.lista-detalles {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.lista-detalles li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.lista-detalles li span {
+    font-weight: bold;
+    color: #333;
+}
+
+.lista-detalles li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contenedortexto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.barra{
+    position: relative;
+    top: -30px;
+    left: 120px;
+    color: #555;
+}
+
+.description1 {
+    position: relative;
+    top: -50px;
+    left: 150px;
+    font-size: 20px; 
+    font-weight: bold;
+    color: black; 
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.description {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #007bff; 
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.textos2, .textos3 {
+    font-size: 10px; 
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: -5px;
+}
+
+.textos3 {
+    margin-top: 10px;
+}
+
+.container6 {
+    text-align: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+    margin-top: 75px;
+}
+
+.games-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.game2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden; 
+    width: 18%; 
+}
+
+.game2 img {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 0 0 10px 10px; 
+    display: block; 
+}
+
+.game-titless {
+    background-color: #008af8; 
+    color: white;
+    font-size: 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 0; 
+    width: 100%; 
+    text-align: center;
+    border-radius: 10px 10px 0 0; 
+}
+
+.categories {
+    color: #ee626b;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.topcategories {
+    color: black;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.agregar {
+    position: relative;
+    top: -325px;
+    left: 460px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar:hover {
+    background-color: #007bff;
+}
+
+.foot {
+    position: relative;
+    background: url('img/copiray.jpg') no-repeat center center;
+    background-size: cover; 
+    padding: 60px; 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px; 
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.foot p {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    padding: 0;
+    font-size: 14px; 
+}

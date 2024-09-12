@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+}
+
+.imagen {
+    display: block; 
+    width: calc(100% - 20px); 
+    height: 420px;
+    object-fit: cover;
+    position: relative; 
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    margin: 10px auto; 
+    overflow: hidden; 
+}
+
+.contenedor {
+    position: absolute;
+    top: 20px; 
+    left: 5%;  
+    z-index: 2; 
+}
+
+.contenedor img {
+    width: 150px; 
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    z-index: 2; 
+}
+
+.sub {
+    position: absolute;
+    top: 50%; 
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.sub a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2; 
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    background: #eceae733;
+    border-radius: 25px;
+}
+
+.main-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.outer-container {
+    background-color: #e9ecef; 
+    padding: 20px;
+    flex: 1; 
+    max-width: 45%; 
+}
+
+.container {
+    padding: 20px; 
+}
+
+.contact-info, .contact-form {
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-top: 0; 
+    color: #333; 
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.contact-form textarea {
+    height: 150px; 
+    resize: vertical; 
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; 
+}
+
+.foot {
+    position: relative;
+    background: url('img/copiray.jpg') no-repeat center center;
+    background-size: cover; 
+    padding: 60px; 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px; 
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.foot p {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    padding: 0;
+    font-size: 14px; 
+}
